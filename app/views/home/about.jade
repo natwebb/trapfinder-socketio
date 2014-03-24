@@ -1,0 +1,41 @@
+extends ../shared/template
+
+block content
+  header
+    h1 Trapfinder
+    h3 is a game about traps and treasure.
+  p
+    | Use the arrow keys to move about the dungeon. You'll see treasure chests scattered around, but traps are (of course) invisible until you step on them.
+    | If you find a treasure chest, good for you! Press the
+    span(class='t')= ' T '
+    | key to open it. If you find a trap, you'd better hope you're lucky!
+  h4 Press the correct key to disarm the trap you just stepped on.
+  p
+    | Press the
+    span(class='g')= ' G '
+    | key to disarm green traps, the
+    span(class='b')= ' B '
+    | key to disarm blue traps, and the
+    span(class='r')= ' R '
+    | key to disarm red traps.
+    | Green traps are a bit more forgiving, but red traps are absolutely brutal, so you'd better hope your reflexes are on point in the lower levels of the dungeon.
+    | At the northeast corner of each dungeon level, you'll find the stairs down to the next level. Press the
+    span(class='s')= ' S '
+    | key to take the stairs.
+  h4 Deeper levels have better treasure, but more dangerous traps.
+  p
+    | When you're ready to leave the dungeon with the treasure you've collected, return to the stairs in the southwest corner of the level, where you started.
+    | Press the
+    span(class='s')= ' S '
+    | key to take the stairs up. You can leave the dungeon immediately from any level. Remember:
+  h4 If you're killed by a trap, you lose all your treasure and start over at level 1!
+  p
+    | Trapfinder: Alone in the Dark was built by
+    a(href='http://www.github.com/natwebb')= ' Nat Webb '
+    | as a capstone project for the front-end development program at
+    a(href='http://www.nashvillesoftwareschool.com')= ' Nashville Software School'
+    | . The official soundtrack of the project was the album
+    a(href='http://en.wikipedia.org/wiki/Holy_Land_%28album%29')= ' Holy Land '
+    | by Angra. The treasure sprites are all from the incredible free fantasy RPG collections by
+    a(href='http://ails.deviantart.com')= ' Henrique Lazarini'
+    |. Both artists are from Brazil, which says something good about what they're up to down there.

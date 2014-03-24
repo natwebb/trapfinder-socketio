@@ -1,0 +1,45 @@
+extends ../shared/template
+
+block game
+  input(type='hidden', data-id=user._id.toString())#id
+  #leftbox
+    #lefthalf
+      h1 Treasures
+      #coppercoin.treasureLine 0
+      #copperbar.treasureLine 0
+      #silvercoin.treasureLine 0
+      #silverbar.treasureLine 0
+      #goldcoin.treasureLine 0
+      #goldbar.treasureLine 0
+      #art1.treasureLine 0
+      #art2.treasureLine 0
+      #art3.treasureLine 0
+      #art4.treasureLine 0
+      #art5.treasureLine 0
+      #art6.treasureLine 0
+      #art7.treasureLine 0
+      #art8.treasureLine 0
+      #art9.treasureLine 0
+      #art10.treasureLine 0
+      #ruby1.treasureLine 0
+      #ruby2.treasureLine 0
+      #ruby3.treasureLine 0
+      #ruby4.treasureLine 0
+      #ruby5.treasureLine 0
+      #ruby6.treasureLine 0
+      #ruby7.treasureLine 0
+      #ruby8.treasureLine 0
+    #righthalf
+      h1 Traps
+      #green.trapLine 0
+      #blue.trapLine 0
+      #red.trapLine 0
+      h1#levelTracker Level 1
+  #wrapper
+    canvas(width='650', height='650')#game
+
+block scripts
+  script(src='/js/source/game.js')
+
+block less
+  link(rel='stylesheet', href='/less/game.css')

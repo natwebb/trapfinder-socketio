@@ -1,0 +1,19 @@
+extends ../shared/template
+
+block game
+  #wrapper.centered
+    table#leaderboard
+      thead
+        th User
+        th Treasure Total
+        th Traps Disarmed
+      tbody
+        each user in users
+          tr
+            td
+              a(href='/users/'+user._id.toString())= user.name
+            td= user.sum
+            td= user.green + user.blue + user.red
+
+block less
+  link(rel='stylesheet', href='/less/leaderboard.css')

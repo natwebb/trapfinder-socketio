@@ -1,0 +1,61 @@
+extends ../shared/template
+
+block content
+  script.
+    var userTreasures = [];
+  each treasure in showUser.treasures
+    script.
+      var t = {};
+      t.name = '#{treasure.name}';
+      t.val = #{treasure.val};
+      userTreasures.push(t);
+
+  header
+    h1= showUser.name
+  .row#trapRow
+    h1 Traps Disarmed
+    .small-3.columns
+      #green.trapBox= showUser.green
+    .small-3.columns
+      #blue.trapBox= showUser.blue
+    .small-3.columns
+      #red.trapBox= showUser.red
+    .small-3.columns
+      #total.trapBox= showUser.green + showUser.blue + showUser.red
+  .row#treasureRow
+    h1 Treasure Recovered
+    .small-3.columns
+      #coppercoin.treasureLine 0
+      #copperbar.treasureLine 0
+      #silvercoin.treasureLine 0
+      #silverbar.treasureLine 0
+      #goldcoin.treasureLine 0
+      #goldbar.treasureLine 0
+    .small-3.columns
+      #art1.treasureLine 0
+      #art2.treasureLine 0
+      #art3.treasureLine 0
+      #art4.treasureLine 0
+      #art5.treasureLine 0
+      #art6.treasureLine 0
+      #art7.treasureLine 0
+      #art8.treasureLine 0
+      #art9.treasureLine 0
+      #art10.treasureLine 0
+    .small-3.columns
+      #ruby1.treasureLine 0
+      #ruby2.treasureLine 0
+      #ruby3.treasureLine 0
+      #ruby4.treasureLine 0
+      #ruby5.treasureLine 0
+      #ruby6.treasureLine 0
+      #ruby7.treasureLine 0
+      #ruby8.treasureLine 0
+    .small-3.columns
+      #totalVal.treasureLine Total Value: 0
+
+block less
+  link(rel='stylesheet', href='/less/user.css')
+
+block scripts
+  script(src='/js/source/usershow.js')

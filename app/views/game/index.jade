@@ -4,38 +4,47 @@ block game
   input(type='hidden', data-id=user._id.toString())#id
   #leftbox
     #lefthalf
-      h1 Treasures
-      #coppercoin.treasureLine 0
-      #copperbar.treasureLine 0
-      #silvercoin.treasureLine 0
-      #silverbar.treasureLine 0
-      #goldcoin.treasureLine 0
-      #goldbar.treasureLine 0
-      #art1.treasureLine 0
-      #art2.treasureLine 0
-      #art3.treasureLine 0
-      #art4.treasureLine 0
-      #art5.treasureLine 0
-      #art6.treasureLine 0
-      #art7.treasureLine 0
-      #art8.treasureLine 0
-      #art9.treasureLine 0
-      #art10.treasureLine 0
-      #ruby1.treasureLine 0
-      #ruby2.treasureLine 0
-      #ruby3.treasureLine 0
-      #ruby4.treasureLine 0
-      #ruby5.treasureLine 0
-      #ruby6.treasureLine 0
-      #ruby7.treasureLine 0
-      #ruby8.treasureLine 0
+      h1 Weapons
+      #a1.treasureLine 0
+      #a2.treasureLine 0
+      #b1.treasureLine 0
+      #b2.treasureLine 0
+      #c1.treasureLine 0
+      #c2.treasureLine 0
+      #d1.treasureLine 0
+      #d2.treasureLine 0
+      #d3.treasureLine 0
+      #d4.treasureLine 0
+      #d5.treasureLine 0
+      #d6.treasureLine 0
+      #d7.treasureLine 0
+      #d8.treasureLine 0
+      #d9.treasureLine 0
+      #d10.treasureLine 0
+      #e1.treasureLine 0
+      #e2.treasureLine 0
+      #e3.treasureLine 0
+      #e4.treasureLine 0
+      #e5.treasureLine 0
+      #e6.treasureLine 0
+      #e7.treasureLine 0
+      #e8.treasureLine 0
     #righthalf
       h1 Traps
       #green.trapLine 0
       #blue.trapLine 0
       #red.trapLine 0
-      h1#levelTracker Level 1
+      h1#levelTracker
   #wrapper
+    #startOptions
+      select#level
+        option Level 1
+        option Level 2
+        option Level 3
+        option Level 4
+        option Level 5
+      #torchmode Torch Mode: On
+      button#start Start Game
     canvas(width='650', height='650')#game
 
 block scripts
